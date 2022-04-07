@@ -27,6 +27,20 @@ const baseSpecs = [
   },
 ];
 
+function stringify(obj, depth) {
+  if(obj == null){ return String(obj); }
+  switch(typeof obj){
+    case "string": return `"${obj}"`;
+    case "function": return obj.name || obj.toString();
+    case "object":
+      var indent = Array(depth||1).join('  '), isArray = Array.isArray(obj);
+      return '{['[+isArray] + Object.keys(obj).map(function(key){
+           return '\n  ' + indent + key + ': ' + stringify(obj[key], (depth||1)+1);
+         }).join(',') + '\n' + indent + '}]'[+isArray];
+    default: return obj.toString();
+  }
+}
+
 function App() {
   const [config, setConfig] = useState({
     base: 'westend',
@@ -82,10 +96,10 @@ function App() {
             <Form.Group>
               <Form.Label>chainspec</Form.Label>
               <Tabs defaultActiveKey="json">
-                {['json', 'yaml'].map((markup, mI) => (
+                {['js', 'json', 'yaml'].map((markup, mI) => (
                   <Tab key={mI} eventKey={markup} title={markup}>
                     <SyntaxHighlighter language={markup} style={docco}>
-                      {(markup === 'json') ? JSON.stringify(spec, null, 2) : YAML.stringify(spec)}
+                      {(markup === 'json') ? JSON.stringify(spec, null, 2) : (markup === 'yaml') ? YAML.stringify(spec) : stringify(spec)}
                     </SyntaxHighlighter>
                   </Tab>
                 ))}
