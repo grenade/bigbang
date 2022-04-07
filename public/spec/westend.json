@@ -1,0 +1,248 @@
+{
+  "name": "westend",
+  "id": "westend",
+  "chainType": "Live",
+  "bootNodes": [],
+  "telemetryEndpoints": [
+    [
+      "/dns/telemetry.polkadot.io/tcp/443/x-parity-wss/%2Fsubmit%2F",
+      0
+    ]
+  ],
+  "protocolId": "dot",
+  "properties": null,
+  "forkBlocks": null,
+  "badBlocks": null,
+  "lightSyncState": null,
+  "codeSubstitutes": {},
+  "genesis": {
+    "runtime": {
+      "system": {},
+      "babe": {
+        "authorities": [],
+        "epochConfig": {
+          "c": [
+            1,
+            4
+          ],
+          "allowed_slots": "PrimaryAndSecondaryVRFSlots"
+        }
+      },
+      "indices": {
+        "indices": []
+      },
+      "balances": {
+        "balances": [
+          [
+            "5CVFESwfkk7NmhQ6FwHCM9roBvr9BGa4vJHFYU8DnGQxrXvz",
+            1000000000000000000
+          ],
+          [
+            "5DD7Q4VEfPTLEdn11CnThoHT5f9xKCrnofWJL5SsvpTghaAT",
+            100000000000000
+          ],
+          [
+            "5G9VGb8ESBeS8Ca4or43RfhShzk9y7T5iTmxHk5RJsjZwsRx",
+            100000000000000
+          ],
+          [
+            "5FzwpgGvk2kk9agow6KsywLYcPzjYc8suKej2bne5G5b9YU3",
+            100000000000000
+          ],
+          [
+            "5CFj6Kg9rmVn1vrqpyjau2ztyBzKeVdRKwNPiA3tqhB5HPqq",
+            100000000000000
+          ]
+        ]
+      },
+      "staking": {
+        "historyDepth": 84,
+        "validatorCount": 50,
+        "minimumValidatorCount": 4,
+        "invulnerables": [
+          "5DD7Q4VEfPTLEdn11CnThoHT5f9xKCrnofWJL5SsvpTghaAT",
+          "5G9VGb8ESBeS8Ca4or43RfhShzk9y7T5iTmxHk5RJsjZwsRx",
+          "5FzwpgGvk2kk9agow6KsywLYcPzjYc8suKej2bne5G5b9YU3",
+          "5CFj6Kg9rmVn1vrqpyjau2ztyBzKeVdRKwNPiA3tqhB5HPqq"
+        ],
+        "forceEra": "ForceNone",
+        "slashRewardFraction": 100000000,
+        "canceledPayout": 0,
+        "stakers": [
+          [
+            "5DD7Q4VEfPTLEdn11CnThoHT5f9xKCrnofWJL5SsvpTghaAT",
+            "5GNzaEqhrZAtUQhbMe2gn9jBuNWfamWFZHULryFwBUXyd1cG",
+            100000000000000,
+            "Validator"
+          ],
+          [
+            "5G9VGb8ESBeS8Ca4or43RfhShzk9y7T5iTmxHk5RJsjZwsRx",
+            "5F7V9Y5FcxKXe1aroqvPeRiUmmeQwTFcL3u9rrPXcMuMiCNx",
+            100000000000000,
+            "Validator"
+          ],
+          [
+            "5FzwpgGvk2kk9agow6KsywLYcPzjYc8suKej2bne5G5b9YU3",
+            "5EqoZhVC2BcsM4WjvZNidu2muKAbu5THQTBKe3EjvxXkdP7A",
+            100000000000000,
+            "Validator"
+          ],
+          [
+            "5CFj6Kg9rmVn1vrqpyjau2ztyBzKeVdRKwNPiA3tqhB5HPqq",
+            "5CwQXP6nvWzigFqNhh2jvCaW9zWVzkdveCJY3tz2MhXMjTon",
+            100000000000000,
+            "Validator"
+          ]
+        ],
+        "minNominatorBond": 0,
+        "minValidatorBond": 0,
+        "maxValidatorCount": null,
+        "maxNominatorCount": null
+      },
+      "session": {
+        "keys": [
+          [
+            "5DD7Q4VEfPTLEdn11CnThoHT5f9xKCrnofWJL5SsvpTghaAT",
+            "5DD7Q4VEfPTLEdn11CnThoHT5f9xKCrnofWJL5SsvpTghaAT",
+            {
+              "grandpa": "5EjvdwATjyFFikdZibVvx1q5uBHhphS2Mnsq5c7yfaYK25vm",
+              "babe": "5FpewyS2VY8Cj3tKgSckq8ECkjd1HKHvBRnWhiHqRQsWfFC1",
+              "im_online": "5FpewyS2VY8Cj3tKgSckq8ECkjd1HKHvBRnWhiHqRQsWfFC1",
+              "para_validator": "5FpewyS2VY8Cj3tKgSckq8ECkjd1HKHvBRnWhiHqRQsWfFC1",
+              "para_assignment": "5FpewyS2VY8Cj3tKgSckq8ECkjd1HKHvBRnWhiHqRQsWfFC1",
+              "authority_discovery": "5FpewyS2VY8Cj3tKgSckq8ECkjd1HKHvBRnWhiHqRQsWfFC1"
+            }
+          ],
+          [
+            "5G9VGb8ESBeS8Ca4or43RfhShzk9y7T5iTmxHk5RJsjZwsRx",
+            "5G9VGb8ESBeS8Ca4or43RfhShzk9y7T5iTmxHk5RJsjZwsRx",
+            {
+              "grandpa": "5HBDAaybNqjmY7ww8ZcZZY1L5LHxvpnyfqJwoB7HhR6raTmG",
+              "babe": "5EjuWgnwTQBZkQi8BQwd6R7xAxHeMUQ5VnRiqU6kqpNFAVAf",
+              "im_online": "5EjuWgnwTQBZkQi8BQwd6R7xAxHeMUQ5VnRiqU6kqpNFAVAf",
+              "para_validator": "5EjuWgnwTQBZkQi8BQwd6R7xAxHeMUQ5VnRiqU6kqpNFAVAf",
+              "para_assignment": "5EjuWgnwTQBZkQi8BQwd6R7xAxHeMUQ5VnRiqU6kqpNFAVAf",
+              "authority_discovery": "5EjuWgnwTQBZkQi8BQwd6R7xAxHeMUQ5VnRiqU6kqpNFAVAf"
+            }
+          ],
+          [
+            "5FzwpgGvk2kk9agow6KsywLYcPzjYc8suKej2bne5G5b9YU3",
+            "5FzwpgGvk2kk9agow6KsywLYcPzjYc8suKej2bne5G5b9YU3",
+            {
+              "grandpa": "5E8ULLQrDAtWhfnVfZmX41Yux86zNAwVJYguWJZVWrJvdhBe",
+              "babe": "5ENr7agvVdvzbL3nKapfMnG4nnVvoHvko7rBhxvU14xYJbvK",
+              "im_online": "5ENr7agvVdvzbL3nKapfMnG4nnVvoHvko7rBhxvU14xYJbvK",
+              "para_validator": "5ENr7agvVdvzbL3nKapfMnG4nnVvoHvko7rBhxvU14xYJbvK",
+              "para_assignment": "5ENr7agvVdvzbL3nKapfMnG4nnVvoHvko7rBhxvU14xYJbvK",
+              "authority_discovery": "5ENr7agvVdvzbL3nKapfMnG4nnVvoHvko7rBhxvU14xYJbvK"
+            }
+          ],
+          [
+            "5CFj6Kg9rmVn1vrqpyjau2ztyBzKeVdRKwNPiA3tqhB5HPqq",
+            "5CFj6Kg9rmVn1vrqpyjau2ztyBzKeVdRKwNPiA3tqhB5HPqq",
+            {
+              "grandpa": "5HGLmrZsiTFTPp3QoS1W8w9NxByt8PVq79reqvdxNcQkByqK",
+              "babe": "5D2txBx5zfjQsHD3KApsuzDR6mQDdZgipgdMwsbyxJVTytXJ",
+              "im_online": "5D2txBx5zfjQsHD3KApsuzDR6mQDdZgipgdMwsbyxJVTytXJ",
+              "para_validator": "5D2txBx5zfjQsHD3KApsuzDR6mQDdZgipgdMwsbyxJVTytXJ",
+              "para_assignment": "5D2txBx5zfjQsHD3KApsuzDR6mQDdZgipgdMwsbyxJVTytXJ",
+              "authority_discovery": "5D2txBx5zfjQsHD3KApsuzDR6mQDdZgipgdMwsbyxJVTytXJ"
+            }
+          ]
+        ]
+      },
+      "grandpa": {
+        "authorities": []
+      },
+      "imOnline": {
+        "keys": []
+      },
+      "authorityDiscovery": {
+        "keys": []
+      },
+      "democracy": {
+        "phantom": null
+      },
+      "council": {
+        "phantom": null,
+        "members": []
+      },
+      "technicalCommittee": {
+        "phantom": null,
+        "members": []
+      },
+      "phragmenElection": {
+        "members": []
+      },
+      "technicalMembership": {
+        "members": [],
+        "phantom": null
+      },
+      "treasury": null,
+      "claims": {
+        "claims": [],
+        "vesting": []
+      },
+      "vesting": {
+        "vesting": []
+      },
+      "gilt": null,
+      "configuration": {
+        "config": {
+          "max_code_size": 3145728,
+          "max_head_data_size": 32768,
+          "max_upward_queue_count": 8,
+          "max_upward_queue_size": 1048576,
+          "max_upward_message_size": 51200,
+          "max_upward_message_num_per_candidate": 5,
+          "hrmp_max_message_num_per_candidate": 5,
+          "validation_upgrade_cooldown": 2,
+          "validation_upgrade_delay": 2,
+          "max_pov_size": 5242880,
+          "max_downward_message_size": 1048576,
+          "ump_service_total_weight": 100000000000,
+          "hrmp_max_parachain_outbound_channels": 4,
+          "hrmp_max_parathread_outbound_channels": 4,
+          "hrmp_sender_deposit": 0,
+          "hrmp_recipient_deposit": 0,
+          "hrmp_channel_max_capacity": 8,
+          "hrmp_channel_max_total_size": 8192,
+          "hrmp_max_parachain_inbound_channels": 4,
+          "hrmp_max_parathread_inbound_channels": 4,
+          "hrmp_channel_max_message_size": 1048576,
+          "code_retention_period": 1200,
+          "parathread_cores": 0,
+          "parathread_retries": 0,
+          "group_rotation_frequency": 20,
+          "chain_availability_period": 4,
+          "thread_availability_period": 4,
+          "scheduling_lookahead": 0,
+          "max_validators_per_core": null,
+          "max_validators": null,
+          "dispute_period": 6,
+          "dispute_post_conclusion_acceptance_period": 100,
+          "dispute_max_spam_slots": 2,
+          "dispute_conclusion_by_time_out_period": 200,
+          "no_show_slots": 2,
+          "n_delay_tranches": 25,
+          "zeroth_delay_tranche_width": 0,
+          "needed_approvals": 2,
+          "relay_vrf_modulo_samples": 2,
+          "ump_max_individual_weight": 20000000000,
+          "pvf_checking_enabled": false,
+          "pvf_voting_ttl": 2,
+          "minimum_validation_upgrade_delay": 5
+        }
+      },
+      "paras": {
+        "paras": []
+      },
+      "hrmp": {
+        "preopenHrmpChannels": []
+      },
+      "xcmPallet": {
+        "safeXcmVersion": 2
+      }
+    }
+  }
+}
